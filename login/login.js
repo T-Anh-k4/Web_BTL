@@ -12,7 +12,7 @@ btnLogin.addEventListener("click", (e) => {
     const user = JSON.parse(localStorage.getItem(inputEmail.value));
     if (user && user.email === inputEmail.value && user.password === inputPassword.value) {
       alert("Đăng Nhập Thành Công");
-      window.location.href = "/HOME/font.html";
+      window.location.href = "HOME/font.html";
     } else {
       alert("Đăng Nhập Thất Bại");
     }
