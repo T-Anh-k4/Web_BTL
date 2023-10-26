@@ -7,7 +7,7 @@
 
   .background-ipad {
     display: block;
-    background-image: url(/OWNERSHIP/imgi/hinh12.jpg);
+    background-image: url(OWNERSHIP/imgi/hinh12.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -201,7 +201,7 @@
 
   .background-ipad {
     display: block;
-    background-image: url(/OWNERSHIP/imgi/hinh12.jpg);
+    background-image: url(OWNERSHIP/imgi/hinh12.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;

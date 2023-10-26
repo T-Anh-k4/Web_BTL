@@ -9,7 +9,7 @@
 }
 
 .background {
-  background-image: url(/MODELS/img/gate_models_og_01.png);
+  background-image: url(MODELS/img/gate_models_og_01.png);
   min-height: 90vh;
   max-width: 100%;
   background-position: center;
@@ -37,10 +37,6 @@
   background-color: rgba(0, 0, 0, 0.3);
   display: none;
   animation: fadeIn linear 0.2s;
-}
-.menu2 li{
-  
-
 }
 /* nav mobile*/
 
