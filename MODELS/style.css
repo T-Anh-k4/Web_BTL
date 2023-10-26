@@ -465,7 +465,6 @@ li {
   margin-left: 30px;
 }
 .urus .anh22{
-  right: 0;
   object-fit: cover;
 }
 
@@ -514,7 +513,7 @@ li {
   padding: 0 30px 30px;
 }
 .popup.close-btn{
-  top: -150%
+  top: -150%;
   opacity: 0;
   width: 100%;
   margin-top: 50px;
@@ -540,10 +539,20 @@ li {
   width: 400px;
   margin-top: -50px;
 }
+.anh22{
+  right: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
 .anh22 img{
-  width: 890px;
-  height: auto;
+  width: 100%;
+  height: 85%;
   clip-path: polygon(14% 28%, 51% 0, 100% 0, 100% 99%, 46% 100%, 14% 71%);
+  /* right: 0; */
+  /* display: flex;
+  justify-content: right; */
+  /* 
+   */
 }
 /* footer */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -563,12 +572,12 @@ ul{
 footer{
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   background-color: #24262b;
   color: #fff;
 }
 .tieude{
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: 59.5% 20.5%;
   grid-template-rows: auto;
