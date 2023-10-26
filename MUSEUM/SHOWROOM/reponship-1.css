@@ -1,0 +1,264 @@
+@media screen and (max-width: 1025px) {
+  .navbar li{
+    display: block;
+    padding:30px 10px;
+  }
+  
+}
+@media screen and (max-width: 950px) {
+  .navbar .menu{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff4D;
+    backdrop-filter: blur(10px);
+    z-index: 6;
+    text-align: left;
+    margin: 0;
+    transition: 0.5;
+    transform: translate(-100%);
+  }
+  .navbar .menu.active{
+    transform: translate(0);
+  }
+  .navbar li{
+    display: block;
+    padding: 20px;
+  }
+  .menu li.gachchan:hover::after{
+      width: 45px;
+      margin-left: 20px;
+    }
+    .menu li.gachchan1:hover::after{
+      width: 70px;
+      margin-left: 20px;
+    }
+  .icon{
+    text-align: right;
+    display: block;
+    margin: auto 20px;
+  }
+    /*  */
+    .navbar .menu li ul{
+      background-color: #24262b;
+      width: 100%;
+      z-index: 7;
+    }
+  .content{
+    width: 100%;
+    margin: 20px 0;
+  }
+  /* chinh menu */
+  .logo img{
+    width: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  /* chih thanh nav */
+  .navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  .navbar li{
+    padding:30px 20px;
+    font-size: 65%;
+  }
+  .slider{
+    height: 100vh;
+  }
+  .home-museum{
+      display: none;
+  }
+  .title-1{
+      font-size: 50%;
+      margin:180px 100px;
+  }
+  .title-1 h1#ms{
+      font-size: 40px;
+  }
+  .text-1{
+    width: 100%;
+  }
+  .text-1 h1{
+  font-size: 99%;
+  margin-top: 20px;
+  }
+  /* phan ct1 */
+  .content-1{
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  row-gap: 100px;
+  margin-top: 20px;
+  }
+  .content-1 .item-1 img{
+     clip-path: none;
+  }
+  /* phan flex-box */
+  .checkin{
+      grid-template-columns: auto auto;
+      grid-template-rows: 300px 300px 300px 300px;
+  }
+  .checkin .item:nth-child(2){
+      grid-column-start: unset;
+      grid-row-start: unset;
+      grid-row-end: unset;
+      /* huy cac cai dat o ben lap la phan tren */
+  }
+  .checkin .item:nth-child(1){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  }
+  .checkin .item:nth-child(5){
+      grid-column-start: 2;/*dang o cot 2 hang 3*/
+      grid-row-start: 3;
+      grid-row-end: 5;/*chieu dai cua cot bang 2 hang =>3+2=5*/
+  }
+  /* ct2 */
+  .vanban p{
+    margin: 20px 0;
+  }
+  .vanban #p3{
+    margin: 0;
+  }
+  /* ct3 */
+  .content-3{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    row-gap: 100px;
+    margin-top: 20px;
+    }
+    .content-3 .item-3 img{
+       clip-path: none;
+    }
+    .content-3 .item-3 .vanban-3 p{
+      margin: 20px 0;
+    }
+  .content-4 h1.ct4{
+    font-size: 36px;
+  }
+  footer{
+      column-gap: 5px;
+  }
+}
+@media screen and (max-width: 671px){
+  .icon-1 p{
+      display: none;
+    }
+    .navbar .icon-1 i{
+      margin-left: 30px;
+    }
+    .navbar .icon-1{
+      width: 35%;
+    }
+}
+/* Phan mobie */
+@media screen and (max-width: 426px){
+  /* Phan header */
+  .logo img{
+      width: 35px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  .navbar .menu .icon-1{
+    display: none;
+  }
+  .navbar .menu{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff4D;
+    backdrop-filter: blur(10px);
+    z-index: 6;
+    text-align: left;
+    margin: 0;
+    transition: 0.5;
+    transform: translate(-100%);
+  }
+  .navbar .menu.active{
+    transform: translate(0);
+  }
+  .navbar li{
+    display: block;
+    padding: 20px;
+  }
+  .icon{
+    text-align: right;
+    display: block;
+    margin: auto 20px;
+  }
+    /* chinh hieu ung duoi chan */
+    .navbar li.gachchan::after{
+      bottom:15px;
+    }
+    .navbar li.gachchan1::after{
+      bottom:15px;
+    }
+    .menu li.gachchan:hover::after{
+      width: 45px;
+      margin-left: 20px;
+    }
+    .menu li.gachchan1:hover::after{
+      width: 70px;
+      margin-left: 20px;
+    }
+    /*  */
+    .navbar .menu li ul{
+      background-color: #24262b;
+      width: 100%;
+      z-index: 7;
+    }
+    /* Phan slide */
+    /* Phan noi dung */
+/* phan flex-box */
+.checkin {
+    grid-template-columns: 100%; 
+    grid-template-rows: 300px 300px 300px ;
+
+}
+.checkin .item:nth-child(1),
+.checkin .item:nth-child(2){
+  grid-column-start: unset;
+  grid-column-end: unset;
+  grid-row-start: unset;
+  grid-row-end: unset;
+}
+.content-2{
+  margin: 100px 0px;
+  display: grid;
+  grid-template-columns: 100% ;
+  /* chia kich thuoc moi cot */
+  column-gap: 3%;
+  grid-template-rows: 200px 300px 300px 400px;
+  /* chia 2 hangf moi hang 300px */
+  row-gap: 50px;
+  }
+  .content-4 h1{
+    font-size: 20px;
+  }
+  .content-4 h1.ct4{
+    font-size: 16px;
+  }
+  .icon-1 p{
+    display: none;
+  }
+  .navbar .icon-1 i{
+    margin-left: 20px;
+  }
+
+}
+@media screen and (max-width: 426px){
+  .navbar .icon-1{
+      width: 20%;
+    }
+    .navbar .icon-1 i{
+      margin-left: 0px;
+    }
+}

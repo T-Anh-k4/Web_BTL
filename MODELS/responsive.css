@@ -1,0 +1,208 @@
+@media (min-width:740px) and (max-width:1024px) {
+
+    .header {
+      overflow: hidden;
+    }
+  
+    .background {
+      display: block;
+      background-image: url(img/gate_models_og_01.png);
+      position: relative;
+    }
+  
+    .thanhngang{
+      max-width: 100%;
+      background-color: rgb(20, 19, 19);
+      height: 56px;
+      position: fixed;
+      width: 1024px;
+      z-index: 1000;
+    }
+    
+      .list-social {
+        background-color: rgb(20, 19, 19);
+        position: absolute;
+        max-width: 1024px;
+        overflow: hidden;
+      }
+      .list-social a {
+        display: block;
+        height: 55px;
+        background-color: rgb(20, 19, 19);
+        cursor: pointer;
+        width: 35px;
+      }
+    
+      .barss {
+        margin-top: 14px;
+      }
+      .a5 {
+        width: 89px;
+      }
+      .ss-ipad{
+        position: relative;
+        left: 63%;
+      }
+      #main-menu.ss-ipad li a{
+        padding-top: 20px;
+      }
+    .container,
+    .menu2,
+    .text2,
+    .dautien {
+      display: none;
+    }
+  .image1{
+    display: block;
+  }
+  .para1{
+    padding-top: 2px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .para1>p{
+    font-size: 24px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .para1 > img{
+    margin: 0 0;
+    padding: 0 0;
+    width: 60%;
+    margin-left: 100px;
+  }
+  #anh1{
+    clip-path: none;
+    width: 100%;
+    height: auto;
+    left: 0;
+   }
+   .huracan{
+    display: block;
+   }
+   #anh2{
+    clip-path: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   }
+   .para2{
+    text-align: center;
+    padding-bottom: 60px;
+   }
+   .urus{
+    display: unset;
+   }
+   .para3{
+    margin-top: 30px;
+    margin-left:30px;
+    text-align: center;
+   }
+   .anh22 img{
+    margin-top: 30px;
+    clip-path: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+   }
+  }
+
+  /* mobile*/
+@media(max-width:740px) {
+
+  .header {
+    overflow: hidden;
+  }
+  .background {
+    display: block;
+    background-image: url(img/gate_models_og_01.png);
+    position: relative;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .barss {
+    margin-top: 14px;
+  }
+  .thanhngang{
+    max-width: 100%;
+    background-color: rgb(20, 19, 19);
+    height: 56px;
+    position: fixed;
+    width: 1024px;
+    z-index: 1000;
+  }
+  .list-social {
+    background-color: rgb(20, 19, 19);
+    position: absolute;
+    max-width: 1024px;
+    overflow: hidden;
+  }
+  .list-social a {
+    display: block;
+    height: 55px;
+    background-color: rgb(20, 19, 19);
+    cursor: pointer;
+    width: 35px;
+  }
+  .ss-mobile{
+    position: relative;
+    left: 33%;
+  }
+  .ss-ipad,
+  .container,
+  .background
+   {
+    display: none;
+  }
+.image1{
+  display: unset;
+}
+#anh1{
+  clip-path: none;
+  overflow: hidden;
+  width: 100%;
+}
+.para1 p{
+  font-size: 20px;
+}
+.huracan{
+  display: unset;
+}
+.urus{
+  display: unset;
+}
+#anh2{
+  clip-path: none;
+  overflow: hidden;
+  width: 100%;
+}
+.para2 p{
+  font-size: 18px;
+  text-align: center;
+}
+.anh22 img{
+ clip-path: none;
+ overflow: hidden;
+ width: 100%;
+}
+button{
+  margin-left: 230px;
+}
+.para3 img{
+  margin-left: 100px;
+}
+.para3 p{
+  text-align: center;
+}
+}
+@media(max-width:740px) {
+  ul#main-menu li{
+    margin-top: -20px;
+
+  }
+}

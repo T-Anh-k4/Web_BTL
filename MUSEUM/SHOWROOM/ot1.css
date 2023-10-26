@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+body{
+    background-color: #8f8b8b;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #eee;
+}
+body{
+    margin: 0;
+    font-family: Arial;
+    font-size:15px;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  }
+  header{
+    background-color:#24262b;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 111;
+  }
+  
+  .logo img{
+    width: 50px;
+    padding: 10px 60px;
+  }
+  .navbar{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+  }
+  .navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+  }
+  .navbar .icon-1{
+    width: 15%;
+    text-align: right;
+  }
+  .navbar .menu{
+    width: 100%;
+  }
+  .navbar li{
+    display: inline-block;
+    padding:30px;
+    position: relative;
+  }
+  .navbar li.gachchan::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom:25px;
+    transition: 0.5s;
+  }
+  .navbar li.gachchan1::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom:25px;
+    transition: 0.5s;
+  }
+  .menu li.gachchan:hover::after{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .menu li.gachchan1:hover::after{
+    width: 100px;
+    margin-left: 30px;
+  }
+  
+  .menu .tap-child li a {
+    font-weight: normal; 
+    opacity: 30%;
+    transition: 0.5s;
+  }
+  /* Áp dụng hiệu ứng khi di chuột vào */
+  .menu .tap-child li a:hover {
+    opacity:unset;
+    font-weight: bold; /* Khi di chuột vào, văn bản sẽ in đậm */
+  }
+  
+  .menu a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar .menu li ul{
+    position: absolute;
+    background-color: #24262b;
+    top:100%;
+    left: 0;
+    width: 250%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: none;
+  }
+  .navbar li:hover > ul{
+    display: block;
+  }
+  .navbar .menu ul li{
+    width: calc(100% - 60px);
+    text-align: left;
+    display: block;
+  }
+  .navbar .icon-1{
+    width: 25%;
+    text-align: center;
+    padding: 30px 30px;
+    display: flex;
+  }
+  .icon-1 .item-1{
+    display: flex;
+    margin-right: 20px;
+  }
+  .icon-1 i{
+   padding-right: 10px;
+  }
+  
+.slider{
+    background-image: radial-gradient(
+        #8B8B8B, #1E252E
+    );
+    overflow-x: hidden;
+    height: 100vh;
+}
+#dCanvas {
+    height: 100vh;
+    cursor: grab;
+
+}
+.contentOne{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 20%;
+    right : 5%;
+    padding: 50px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contentOne h1{
+    font-size: 3.5rem;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+.contentOne .des{
+    opacity: 0.6;
+}
+.contentOneAction .contentOne{
+    opacity: 1;pointer-events: unset;
+}
+button#showmore{
+    position: absolute;
+    bottom:10%;
+    left: 50%;
+    background-color: transparent;
+    border: 1px solid #eee5;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #eee5;
+}
+.contentTwo{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    bottom: 20%;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contentTwoAction .contentTwo{
+    opacity: 1;
+    pointer-events: unset;
+}
+.contentTwo ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.contentTwo ul li span:nth-child(1){
+    font-size: xxx-large;
+    font-weight: bold;
+    display: block;
+}
+.contentTwoAction ul li{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: showli 1s ease-in-out 1 forwards;
+ }
+ @keyframes showli{
+     from{
+         opacity: 0;
+         transform: translateY(10px);
+     }to{
+         opacity: 1;
+          transform: translateY(0px);
+     }
+ }
+
+.contentTwo ul li:nth-child(2){
+    animation-delay: 0.3s!important;
+}
+.contentTwo ul li:nth-child(2){
+    animation-delay: 0.5s!important;
+}
+.contentTwo ul li:nth-child(3){
+    animation-delay: 0.7s!important;
+}
+
+.contentTwo ul li:nth-child(4){
+    animation-delay: 0.9s!important;
+}
+/* Phan footer */
+footer{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #24262b;
+  color: #fff;
+}
+.tieude{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 59.5% 20.5%;
+  grid-template-rows: auto;
+  column-gap: 20%;
+}
+.item-5{
+  margin: 30px;
+  margin-bottom: 0;
+
+}
+.item-5 ul li{
+  display: inline-block;
+  padding: 10px;
+}
+.item-5 i{
+  padding: 10px;
+}
+.item-5 li a{
+  text-decoration: none;
+  color: #fff;
+}
+.content-5{
+  margin:0 30px;
+}
+.content-5 p{
+  line-height: 1.5;
+}
+/* xoa icon thanh ngang  */
+.icon{
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #dCanvas {
+        height: 40vh;
+    }
+    .contentOne, .contentTwo{
+        position: relative;
+        width: 90%;
+        height: auto;
+        opacity: 1!important;
+        text-align: center;
+        padding: 10px 0 0 5%;
+        top: unset;
+        right: unset;
+        left: unset;
+        bottom: unset;
+    }
+    .contentOne h1{
+        font-size: large;
+    }
+    .contentTwo ul li span:nth-child(1){
+        font-size: medium;
+    }
+    .contentTwo ul{
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+    .slider #showmore{
+        display: none;
+    }
+
+}
